@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.marzukikamal.fantastical</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>2BD573C3-8F43-4F96-A1E2-BF750A853EC3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>96402506-FDEF-4442-9869-F70F39BC0337</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EE60CF59-B1DD-4DAC-817E-2DE650ADA511</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2BD573C3-8F43-4F96-A1E2-BF750A853EC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Marzuki Kamal</string>
+	<key>description</key>
+	<string>Add to Fantastical with natural language</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Fantastical</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "Fantastical"
+		parse sentence q with add immediately
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>2BD573C3-8F43-4F96-A1E2-BF750A853EC3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>fan</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Add to Fantastical</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>EE60CF59-B1DD-4DAC-817E-2DE650ADA511</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Item created</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>96402506-FDEF-4442-9869-F70F39BC0337</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>2BD573C3-8F43-4F96-A1E2-BF750A853EC3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>575</integer>
+			<key>ypos</key>
+			<integer>265</integer>
+		</dict>
+		<key>96402506-FDEF-4442-9869-F70F39BC0337</key>
+		<dict>
+			<key>xpos</key>
+			<integer>800</integer>
+			<key>ypos</key>
+			<integer>265</integer>
+		</dict>
+		<key>EE60CF59-B1DD-4DAC-817E-2DE650ADA511</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>265</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/marzukikamal</string>
+</dict>
+</plist>
